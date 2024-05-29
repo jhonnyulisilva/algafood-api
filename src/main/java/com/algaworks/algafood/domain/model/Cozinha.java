@@ -4,12 +4,11 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-@Entity
+@AllArgsConstructor
 @Builder
+@Entity
 public class Cozinha {
 
     @Id

@@ -1,6 +1,9 @@
 package com.algaworks.algafood.domain.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -9,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Cozinha {
+public class Estado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

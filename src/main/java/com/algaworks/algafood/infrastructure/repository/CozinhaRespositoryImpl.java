@@ -2,12 +2,14 @@ package com.algaworks.algafood.infrastructure.repository;
 
 import com.algaworks.algafood.domain.model.Cozinha;
 import com.algaworks.algafood.domain.repository.CozinhaRepository;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+@Component
 public class CozinhaRespositoryImpl implements CozinhaRepository {
 
     @PersistenceContext
@@ -23,7 +25,6 @@ public class CozinhaRespositoryImpl implements CozinhaRepository {
         return entityManager.createQuery("from Cozinha", Cozinha.class)
                 .getResultList();
     }
-
 
     @Transactional
     @Override
